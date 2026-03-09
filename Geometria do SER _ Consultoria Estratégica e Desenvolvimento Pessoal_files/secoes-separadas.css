@@ -1,0 +1,195 @@
+/* ===== SEÇÃO PARA PESSOAS (PF) ===== */
+.para-pessoas {
+    background-color: var(--cor-fundo-claro);
+    background-image: 
+        radial-gradient(circle, rgba(201, 169, 97, 0.02) 1px, transparent 1px);
+    background-size: 30px 30px;
+    position: relative;
+    overflow: hidden;
+    padding: var(--espacamento-secao) 0;
+}
+
+/* Círculos grandes sutis no background */
+.para-pessoas::before {
+    content: '';
+    position: absolute;
+    top: 10%;
+    left: -150px;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    border: 2px solid rgba(201, 169, 97, 0.08);
+    pointer-events: none;
+}
+
+.para-pessoas::after {
+    content: '';
+    position: absolute;
+    bottom: -200px;
+    right: -150px;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    border: 2px solid rgba(201, 169, 97, 0.06);
+    pointer-events: none;
+}
+
+/* ===== SEÇÃO PARA EMPRESAS (PJ) ===== */
+.para-empresas {
+    background-color: var(--cor-primaria-escura);
+    position: relative;
+    overflow: hidden;
+    padding: var(--espacamento-secao) 0;
+}
+
+/* Círculos grandes sutis no background */
+.para-empresas::before {
+    content: '';
+    position: absolute;
+    top: -200px;
+    right: -150px;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    border: 2px solid rgba(201, 169, 97, 0.06);
+    pointer-events: none;
+}
+
+.para-empresas::after {
+    content: '';
+    position: absolute;
+    bottom: 10%;
+    left: -150px;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    border: 2px solid rgba(201, 169, 97, 0.08);
+    pointer-events: none;
+}
+
+.para-empresas .section-title {
+    color: var(--cor-texto-claro);
+}
+
+/* ===== INTRO DAS SEÇÕES ===== */
+.secao-intro {
+    max-width: 900px;
+    margin: 0 auto 60px;
+    text-align: center;
+}
+
+.secao-tagline {
+    font-size: 1.2rem;
+    line-height: 1.9;
+    font-weight: 400;
+}
+
+.para-pessoas .secao-tagline {
+    color: var(--cor-texto);
+}
+
+.para-empresas .secao-tagline {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* ===== GRID VERTICAL DE PRODUTOS ===== */
+.produtos-grid-vertical {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.produto-card-vertical {
+    background-color: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--cor-borda);
+    padding: 40px;
+    position: relative;
+    transition: var(--transicao-padrao);
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+/* Estilos específicos para PF */
+.para-pessoas .produto-card-vertical {
+    background-color: white;
+    border-color: var(--cor-borda);
+}
+
+.para-pessoas .produto-card-vertical:hover {
+    border-color: var(--cor-destaque);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(82, 181, 229, 0.15);
+}
+
+/* Estilos específicos para PJ */
+.para-empresas .produto-card-vertical {
+    background-color: rgba(255, 255, 255, 0.03);
+    border-color: var(--cor-borda);
+}
+
+.para-empresas .produto-card-vertical:hover {
+    border-color: var(--cor-destaque);
+    background-color: rgba(255, 255, 255, 0.05);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(82, 181, 229, 0.15);
+}
+
+/* Detalhes geométricos nos cantos */
+.produto-card-vertical::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    border-top: 3px solid var(--cor-destaque);
+    border-left: 3px solid var(--cor-destaque);
+    opacity: 0.2;
+    transition: var(--transicao-padrao);
+}
+
+.produto-card-vertical::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    border-bottom: 3px solid var(--cor-destaque);
+    border-right: 3px solid var(--cor-destaque);
+    opacity: 0.2;
+    transition: var(--transicao-padrao);
+}
+
+.produto-card-vertical:hover::before,
+.produto-card-vertical:hover::after {
+    opacity: 0.8;
+}
+
+/* Estilos dos produtos (mantém os mesmos) */
+.para-pessoas .produto-subtitle {
+    color: var(--cor-destaque);
+}
+
+.para-empresas .produto-subtitle {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.para-pessoas .produto-description {
+    color: var(--cor-texto);
+}
+
+.para-empresas .produto-description {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .produto-card-vertical {
+        flex-direction: column;
+        padding: 30px 20px;
+    }
+}
