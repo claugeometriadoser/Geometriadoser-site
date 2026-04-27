@@ -1,0 +1,463 @@
+/* =========================================
+   PÁGINA PARA PESSOAS - GEOMETRIA DO SER
+   ========================================= */
+
+/* ===== HERO PARA PESSOAS ===== */
+.hero-pessoas {
+    position: relative;
+    height: 100vh;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1600&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+.hero-pessoas-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(15, 20, 25, 0.85), rgba(26, 31, 46, 0.75));
+    z-index: 1;
+}
+
+.hero-pessoas-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 0 20px;
+    margin-top: -50px;
+}
+
+.hero-pessoas-title {
+    font-family: var(--font-serif);
+    font-size: 5rem;
+    font-weight: 400;
+    color: var(--cor-white);
+    letter-spacing: 4px;
+    margin-bottom: 40px;
+}
+
+.hero-pessoas-subtitle {
+    font-size: 1.6rem;
+    line-height: 1.9;
+    color: var(--cor-gray-light);
+    font-weight: 300;
+}
+
+.highlight-gold {
+    color: var(--cor-gold);
+    font-weight: 500;
+}
+
+.scroll-down {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    font-size: 2rem;
+    color: var(--cor-gold);
+    animation: bounce 2s infinite;
+}
+
+/* ===== ETAPAS ===== */
+.etapa {
+    padding: 120px 40px;
+    position: relative;
+}
+
+.etapa-1 {
+    background-color: #f5f2ed;
+}
+
+.etapa-2 {
+    background-color: var(--cor-dark-bg);
+}
+
+.etapa-3 {
+    background-color: #e8e4dc;
+}
+
+.container-etapa {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.container-etapa.reverse {
+    grid-template-columns: 1fr 1fr;
+}
+
+.etapa-content {
+    position: relative;
+}
+
+.etapa-numero {
+    font-family: var(--font-serif);
+    font-size: 8rem;
+    font-weight: 400;
+    color: var(--cor-gold);
+    opacity: 0.15;
+    position: absolute;
+    top: -60px;
+    left: -20px;
+    z-index: 0;
+}
+
+.etapa-2 .etapa-numero {
+    color: var(--cor-gold);
+    opacity: 0.1;
+}
+
+.etapa-title {
+    font-family: var(--font-serif);
+    font-size: 2.8rem;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 1;
+}
+
+.etapa-1 .etapa-title,
+.etapa-3 .etapa-title {
+    color: var(--cor-dark-bg);
+}
+
+.etapa-2 .etapa-title {
+    color: var(--cor-white);
+}
+
+.etapa-text {
+    font-size: 1.15rem;
+    line-height: 1.9;
+    margin-bottom: 50px;
+    position: relative;
+    z-index: 1;
+}
+
+.etapa-1 .etapa-text,
+.etapa-3 .etapa-text {
+    color: #4a4a4a;
+}
+
+.etapa-2 .etapa-text {
+    color: var(--cor-gray-light);
+}
+
+.etapa-text strong {
+    color: var(--cor-gold);
+    font-weight: 600;
+}
+
+/* ===== IMAGENS DAS ETAPAS ===== */
+.etapa-image {
+    position: relative;
+    height: 550px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.etapa-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.etapa-image:hover .etapa-img {
+    transform: scale(1.05);
+}
+
+/* ===== PRODUTO BOX ===== */
+.produto-box {
+    background-color: var(--cor-white);
+    padding: 40px;
+    border-radius: 8px;
+    border-left: 4px solid var(--cor-gold);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.etapa-2 .produto-box {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-left: 4px solid var(--cor-gold);
+    backdrop-filter: blur(10px);
+}
+
+.produto-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(201, 169, 97, 0.3);
+}
+
+.produto-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, var(--cor-gold), var(--cor-gold-dark));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 25px;
+}
+
+.produto-title {
+    font-family: var(--font-serif);
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.etapa-1 .produto-title,
+.etapa-3 .produto-title {
+    color: var(--cor-dark-bg);
+}
+
+.etapa-2 .produto-title {
+    color: var(--cor-white);
+}
+
+.produto-desc {
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.etapa-1 .produto-desc,
+.etapa-3 .produto-desc {
+    color: #666;
+}
+
+.etapa-2 .produto-desc {
+    color: var(--cor-gray-light);
+}
+
+.btn-produto {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 35px;
+    background: linear-gradient(135deg, var(--cor-gold), var(--cor-gold-dark));
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.btn-produto:hover {
+    background: linear-gradient(135deg, var(--cor-gold-dark), var(--cor-gold));
+    transform: translateX(5px);
+    box-shadow: 0 5px 20px rgba(201, 169, 97, 0.4);
+}
+
+/* ===== CTA FINAL ===== */
+.cta-final {
+    background: linear-gradient(135deg, var(--cor-navy), var(--cor-dark-bg));
+    padding: 100px 40px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-final::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('https://images.unsplash.com/photo-1519681393784-d120267933ba?w=1600&q=80');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.1;
+    z-index: 0;
+}
+
+.container-cta {
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.cta-title {
+    font-family: var(--font-serif);
+    font-size: 3rem;
+    font-weight: 400;
+    color: var(--cor-white);
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+}
+
+.cta-text {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    color: var(--cor-gray-light);
+    margin-bottom: 50px;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 18px 40px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.btn-cta.btn-primary {
+    background: linear-gradient(135deg, var(--cor-gold), var(--cor-gold-dark));
+    color: white;
+    border: 2px solid var(--cor-gold);
+}
+
+.btn-cta.btn-primary:hover {
+    background: linear-gradient(135deg, var(--cor-gold-dark), var(--cor-gold));
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(201, 169, 97, 0.5);
+}
+
+.btn-cta.btn-secondary {
+    background: transparent;
+    color: var(--cor-gold);
+    border: 2px solid var(--cor-gold);
+}
+
+.btn-cta.btn-secondary:hover {
+    background: var(--cor-gold);
+    color: var(--cor-dark-bg);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(201, 169, 97, 0.4);
+}
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 1024px) {
+    .container-etapa,
+    .container-etapa.reverse {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+    
+    .etapa-image {
+        height: 400px;
+    }
+    
+    .etapa-numero {
+        font-size: 6rem;
+        top: -40px;
+    }
+    
+    .hero-pessoas {
+        background-attachment: scroll;
+    }
+    
+    .hero-pessoas-title {
+        font-size: 4rem;
+        letter-spacing: 3px;
+    }
+    
+    .hero-pessoas-subtitle {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .etapa {
+        padding: 80px 20px;
+    }
+    
+    .hero-pessoas {
+        height: 100vh;
+        min-height: 500px;
+        background-attachment: scroll;
+    }
+    
+    .hero-pessoas-content {
+        margin-top: 0;
+    }
+    
+    .hero-pessoas-title {
+        font-size: 3rem;
+        letter-spacing: 2px;
+        margin-bottom: 30px;
+    }
+    
+    .hero-pessoas-subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .etapa-title {
+        font-size: 2rem;
+    }
+    
+    .etapa-text {
+        font-size: 1rem;
+    }
+    
+    .etapa-image {
+        height: 300px;
+    }
+    
+    .etapa-numero {
+        font-size: 4rem;
+        top: -30px;
+        left: 0;
+    }
+    
+    .produto-box {
+        padding: 30px 25px;
+    }
+    
+    .cta-title {
+        font-size: 2rem;
+    }
+    
+    .cta-text {
+        font-size: 1.1rem;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .btn-cta {
+        justify-content: center;
+    }
+    
+    .cta-final {
+        padding: 60px 20px;
+    }
+}

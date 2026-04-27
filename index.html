@@ -1,877 +1,354 @@
 <!DOCTYPE html>
-
-<!-- saved from url=(0035)https://oihsspkc.gensparkspace.com/ -->
-
-<html lang="pt-BR" style="visibility: visible;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-    
-
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta name="description" content="Geometria do SER - Alinhando as partes que sustentam o resultado. Processos de transformação para empresas e pessoas que precisam recuperar direção.">
-
-    <title>Geometria do SER | Consultoria Estratégica e Desenvolvimento Pessoal</title>
-
+    <meta name="description" content="Geometria do SER - Integrando engenharia e psicologia aplicada para diagnosticar desalinhamentos e sustentar resultados consistentes.">
+    <title>Geometria do SER | Diagnóstico e Realinhamento</title>
     
-
     <!-- Google Fonts -->
-
-    <link rel="preconnect" href="https://fonts.googleapis.com/">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
-
-    <link href="./assets/css2" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
-
     <!-- Font Awesome -->
-
-    <link rel="stylesheet" href="./assets/all.min.css">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
     
-
     <!-- CSS -->
-
-    <link rel="stylesheet" href="./assets/style.css">
-
-    <link rel="stylesheet" href="./assets/secoes-separadas.css">
-
-<style>
-
-    /* Animações AOS */
-
-    .aos-init {
-
-        opacity: 0;
-
-        transform: translateY(30px);
-
-        transition: opacity 0.6s ease, transform 0.6s ease;
-
-    }
-
-    
-
-    .aos-animate {
-
-        opacity: 1;
-
-        transform: translateY(0);
-
-    }
-
-    
-
-    /* Fade in inicial */
-
-    body {
-
-        opacity: 0;
-
-        transition: opacity 0.5s ease;
-
-    }
-
-    
-
-    body.loaded {
-
-        opacity: 1;
-
-    }
-
-    
-
-    /* Botão voltar ao topo */
-
-    .back-to-top {
-
-        position: fixed;
-
-        bottom: 30px;
-
-        right: 30px;
-
-        width: 50px;
-
-        height: 50px;
-
-        background-color: #C8A97E;
-
-        color: #1C1C1C;
-
-        border: none;
-
-        border-radius: 50%;
-
-        font-size: 1.2rem;
-
-        cursor: pointer;
-
-        opacity: 0;
-
-        visibility: hidden;
-
-        transition: all 0.3s ease;
-
-        z-index: 999;
-
-        box-shadow: 0 5px 20px rgba(200, 169, 126, 0.3);
-
-    }
-
-    
-
-    .back-to-top.visible {
-
-        opacity: 1;
-
-        visibility: visible;
-
-    }
-
-    
-
-    .back-to-top:hover {
-
-        background-color: #8B6F47;
-
-        transform: translateY(-5px);
-
-        box-shadow: 0 8px 25px rgba(200, 169, 126, 0.4);
-
-    }
-
-    
-
-    /* Active link */
-
-    .nav-link.active {
-
-        color: #C8A97E;
-
-    }
-
-    
-
-    /* Transições suaves para parallax */
-
-    .produto-card,
-
-    .badge-item,
-
-    .contato-card {
-
-        transition: all 0.3s ease;
-
-    }
-
-    
-
-    /* Animação de delay para elementos com data-aos */
-
-    [data-aos-delay="100"] {
-
-        transition-delay: 0.1s;
-
-    }
-
-    
-
-    [data-aos-delay="200"] {
-
-        transition-delay: 0.2s;
-
-    }
-
-    
-
-    [data-aos-delay="300"] {
-
-        transition-delay: 0.3s;
-
-    }
-
-    
-
-    [data-aos-delay="400"] {
-
-        transition-delay: 0.4s;
-
-    }
-
-    
-
-    /* Responsividade do botão voltar ao topo */
-
-    @media (max-width: 768px) {
-
-        .back-to-top {
-
-            width: 45px;
-
-            height: 45px;
-
-            bottom: 20px;
-
-            right: 20px;
-
-            font-size: 1rem;
-
-        }
-
-    }
-
-</style></head>
-
-<body class="loaded">
-
-    <!-- Navigation -->
-
-    <nav class="navbar" id="navbar">
-
-        <div class="container-nav">
-
-            <div class="nav-brand">
-
-                <img src="./Geometria do SER  Consultoria Estratégica e Desenvolvimento Pessoalfiles/logo-geometria-do-ser.png" alt="Geometria do SER" class="nav-logo">
-
-                <span class="logo-text">GEOMETRIA DO SER</span>
-
+    <link rel="stylesheet" href="css/style-new.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container-header">
+            <div class="brand">
+                <img src="images/logo-geometria-do-ser.png" alt="Geometria do SER" class="brand-logo">
+                <span class="brand-text">GEOMETRIA DO SER</span>
             </div>
-
-            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
-
+            <nav class="nav">
+                <a href="#inicio" class="nav-link">INÍCIO</a>
+                <a href="para-pessoas.html" class="nav-link">PARA PESSOAS</a>
+                <a href="para-empresas.html" class="nav-link">PARA EMPRESAS</a>
+                <a href="#sobre" class="nav-link">SOBRE</a>
+                <a href="#contato" class="nav-link">CONTATO</a>
+            </nav>
+            <a href="https://wa.me/5511987545477" class="btn-header" target="_blank">
+                <i class="fab fa-whatsapp"></i> FALE COM A CLAUDIA
+            </a>
+            <button class="mobile-toggle" id="mobileToggle">
                 <span></span>
-
                 <span></span>
-
                 <span></span>
-
             </button>
-
-            <ul class="nav-menu" id="navMenu">
-
-                <li><a href="https://oihsspkc.gensparkspace.com/#inicio" class="nav-link">INÍCIO</a></li>
-
-                <li><a href="https://oihsspkc.gensparkspace.com/#para-pessoas" class="nav-link">PARA PESSOAS</a></li>
-
-                <li><a href="https://oihsspkc.gensparkspace.com/#para-empresas" class="nav-link">PARA EMPRESAS</a></li>
-
-                <li><a href="https://oihsspkc.gensparkspace.com/#sobre" class="nav-link">SOBRE</a></li>
-
-                <li><a href="https://oihsspkc.gensparkspace.com/#contato" class="nav-link">CONTATO</a></li>
-
-            </ul>
-
         </div>
-
-    </nav>
+    </header>
 
     <!-- Hero Section -->
-
-    <section id="inicio" class="hero">
-
-        <div class="geometric-bg">
-
-            <div class="geo-shape shape-1" style="transform: translate(7.7029px, 7.21574px);"></div>
-
-            <div class="geo-shape shape-2" style="transform: translate(15.4058px, 14.4315px);"></div>
-
-            <div class="geo-shape shape-3" style="transform: translate(23.1087px, 21.6472px);"></div>
-
-            <div class="geo-shape shape-4" style="transform: translate(30.8116px, 28.863px);"></div>
-
-            <div class="geo-shape shape-5" style="transform: translate(38.5145px, 36.0787px);"></div>
-
+    <section id="inicio" class="hero-section">
+        <div class="hero-logo-background">
+            <img src="images/logo-geometria-do-ser.png" alt="Logo Background" class="logo-bg">
         </div>
+        <div class="container-hero">
+            <h1 class="hero-title">
+                Quando o esforço não se traduz em resultado,<br>
+                algo está <span class="highlight">fora de eixo</span>.
+            </h1>
+            <p class="hero-subtitle">
+                Integrando engenharia e psicologia aplicada<br>
+                para diagnosticar desalinhamentos<br>
+                e sustentar resultados consistentes.
+            </p>
+            <div class="hero-scroll">
+                <a href="#dual-section" class="scroll-indicator">
+                    <i class="fas fa-chevron-down"></i>
+                </a>
+            </div>
+        </div>
+    </section>
 
-        <div class="container">
-
-            <div class="hero-content">
-
-                <div class="hero-logo">
-
-                    <img src="./Geometria do SER  Consultoria Estratégica e Desenvolvimento Pessoalfiles/logo-geometria-do-ser.png" alt="Geometria do SER" class="hero-logo-img">
-
+    <!-- Seção Dividida: Para Pessoas | Para Empresas -->
+    <section id="dual-section" class="dual-section">
+        <div class="container-dual">
+            <!-- Para Pessoas -->
+            <div class="dual-column">
+                <div class="icon-circle">
+                    <i class="fas fa-user"></i>
                 </div>
-
-                <h1 class="hero-title aos-init aos-animate" data-aos="fade-up">GEOMETRIA DO SER</h1>
-
-                <p class="hero-subtitle aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">Alinhando as partes que sustentam o resultado</p>
-
-                <p class="hero-description aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
-
-                    Processos de transformação para empresas<br>
-
-                    e pessoas que precisam recuperar direção.
-
-                </p>
-
-                <div class="hero-cta aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
-
-                    <a href="https://wa.me/5511987545477" class="btn btn-primary" target="_blank">
-
-                        <i class="fab fa-whatsapp"></i> Fale com a Claudia
-
+                <h3 class="dual-label">PARA</h3>
+                <h2 class="dual-title">PESSOAS</h2>
+                <div class="dual-content">
+                    <p class="dual-description">
+                        Cansaço recorrente.<br>
+                        Mudanças que não se sustentam.<br>
+                        Sensação de esforço alto e avanço baixo.
+                    </p>
+                    <div class="dual-divider"></div>
+                    <p class="dual-cta-text">
+                        Descubra quais padrões estão<br>
+                        influenciando seus resultados.
+                    </p>
+                    <a href="https://engenhariapp.geometriadoser.com.br/engenhariapp" class="btn-dual" target="_blank">
+                        FAZER MEU DIAGNÓSTICO <i class="fas fa-arrow-right"></i>
                     </a>
-
                 </div>
+            </div>
 
-                <div class="hero-scroll">
+            <!-- Divisor Central -->
+            <div class="center-divider">
+                <div class="divider-icon"></div>
+            </div>
 
-                    <a href="https://oihsspkc.gensparkspace.com/#solucoes-split" class="scroll-indicator">
-
-                        <i class="fas fa-chevron-down"></i>
-
+            <!-- Para Empresas -->
+            <div class="dual-column">
+                <div class="icon-circle">
+                    <i class="fas fa-building"></i>
+                </div>
+                <h3 class="dual-label">PARA</h3>
+                <h2 class="dual-title">EMPRESAS</h2>
+                <div class="dual-content">
+                    <p class="dual-description">
+                        Estratégia definida.<br>
+                        Execução desalinhada.<br>
+                        Resultados inconsistentes.
+                    </p>
+                    <div class="dual-divider"></div>
+                    <p class="dual-cta-text">
+                        Identifique onde está o desalinhamento<br>
+                        estrutural da sua organização.
+                    </p>
+                    <a href="https://wa.me/5511987545477" class="btn-dual" target="_blank">
+                        AGENDAR DIAGNÓSTICO ORGANIZACIONAL <i class="fas fa-arrow-right"></i>
                     </a>
-
                 </div>
-
             </div>
-
         </div>
-
     </section>
 
-    <!-- Seção Para Pessoas (PF) -->
-
-    <section id="para-pessoas" class="para-pessoas">
-
-        <div class="container">
-
-            <div class="section-header">
-
-                <h2 class="section-title">PARA PESSOAS</h2>
-
-                <div class="title-divider"></div>
-
-            </div>
-
+    <!-- Seção Sistema -->
+    <section class="sistema-section">
+        <div class="container-sistema">
+            <h2 class="sistema-title">UM SISTEMA PARA RECUPERAR COERÊNCIA E DIREÇÃO</h2>
             
+            <div class="sistema-grid">
+                <!-- Diagnóstico -->
+                <div class="sistema-item">
+                    <div class="sistema-icon">
+                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                            <circle cx="30" cy="30" r="28" stroke="#C9A961" stroke-width="2"/>
+                            <circle cx="30" cy="30" r="20" stroke="#C9A961" stroke-width="1"/>
+                            <circle cx="30" cy="30" r="12" stroke="#C9A961" stroke-width="1"/>
+                            <line x1="30" y1="2" x2="30" y2="58" stroke="#C9A961" stroke-width="1"/>
+                            <line x1="2" y1="30" x2="58" y2="30" stroke="#C9A961" stroke-width="1"/>
+                        </svg>
+                    </div>
+                    <h3 class="sistema-item-title">DIAGNÓSTICO</h3>
+                    <p class="sistema-item-text">
+                        Identificamos com precisão<br>
+                        onde está o desalinhamento.
+                    </p>
+                </div>
 
-            <div class="secao-intro aos-init" data-aos="fade-up">
+                <!-- Realinhamento -->
+                <div class="sistema-item">
+                    <div class="sistema-icon">
+                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                            <path d="M30 5 L50 25 L30 45 L10 25 Z" stroke="#C9A961" stroke-width="2" fill="none"/>
+                            <circle cx="30" cy="25" r="8" stroke="#C9A961" stroke-width="1"/>
+                            <line x1="30" y1="5" x2="30" y2="45" stroke="#C9A961" stroke-width="1"/>
+                        </svg>
+                    </div>
+                    <h3 class="sistema-item-title">REALINHAMENTO</h3>
+                    <p class="sistema-item-text">
+                        Ajustamos decisões, estrutura<br>
+                        e modo de operar.
+                    </p>
+                </div>
 
-                <p class="secao-tagline">
-
-                    Ajudo pessoas que perderam o eixo a recuperar direção.<br>
-
-                    Meu trabalho é conduzir travessias de realinhamento e reengenharia interna.
-
-                </p>
-
+                <!-- Sustentação -->
+                <div class="sistema-item">
+                    <div class="sistema-icon">
+                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                            <circle cx="30" cy="30" r="25" stroke="#C9A961" stroke-width="2"/>
+                            <path d="M20 35 Q30 20 40 35" stroke="#C9A961" stroke-width="2" fill="none"/>
+                            <path d="M15 40 Q30 28 45 40" stroke="#C9A961" stroke-width="1.5" fill="none"/>
+                        </svg>
+                    </div>
+                    <h3 class="sistema-item-title">SUSTENTAÇÃO</h3>
+                    <p class="sistema-item-text">
+                        Consolidamos resultados<br>
+                        consistentes ao longo do tempo.
+                    </p>
+                </div>
             </div>
 
-            <div class="produtos-grid-vertical">
-
-                <!-- Produto PF 01 -->
-
-                <div class="produto-card-vertical aos-init" data-aos="fade-up" data-aos-delay="100">
-
-                    <div class="produto-number">01</div>
-
-                    <div class="produto-content">
-
-                        <h3 class="produto-title">Sessão de Realinhamento</h3>
-
-                        <p class="produto-subtitle">Uma leitura estratégica para quem perdeu direção mesmo sendo competente</p>
-
-                        <p class="produto-description">
-
-                            Encontro individual para identificar desalinhamentos invisíveis através de leitura sistêmica. Trabalhamos três dimensões: <strong>Alinhar</strong> (reconhecer o que está fora de eixo), <strong>Mudar</strong> (identificar qual movimento precisa acontecer) e <strong>Expressar</strong> (definir como essa mudança aparece nas decisões).
-
-                        </p>
-
-                        <div class="produto-meta">
-
-                            <span class="meta-item"><i class="fas fa-clock"></i> 1 encontro</span>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <!-- Produto PF 02 -->
-
-                <div class="produto-card-vertical aos-init" data-aos="fade-up" data-aos-delay="200">
-
-                    <div class="produto-number">02</div>
-
-                    <div class="produto-content">
-
-                        <h3 class="produto-title">Reengenharia do SER</h3>
-
-                        <p class="produto-subtitle">Transformação estrutural para reorganizar sua vida de dentro para fora</p>
-
-                        <p class="produto-description">
-
-                            Processo estruturado para <strong>desmontar</strong> padrões de desalinhamento, <strong>reorganizar</strong> identidade e decisões, e <strong>reconstruir</strong> direção com base em essência e realidade. Utiliza triângulo A.M.E., mapas simbólicos e integração racional + simbólica.
-
-                        </p>
-
-                        <div class="produto-meta">
-
-                            <span class="meta-item"><i class="fas fa-clock"></i> 4 encontros</span>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <!-- Produto PF 03 -->
-
-                <div class="produto-card-vertical aos-init" data-aos="fade-up" data-aos-delay="300">
-
-                    <div class="produto-number">03</div>
-
-                    <div class="produto-content">
-
-                        <h3 class="produto-title">Mentoria de Travessia</h3>
-
-                        <p class="produto-subtitle">Acompanhamento profundo para transições de vida, identidade e carreira</p>
-
-                        <p class="produto-description">
-
-                            Processo continuado para quem está atravessando mudanças profundas. Jornada do <strong>Modo Sobrevivência → Individuação</strong>. Acompanhamento próximo, integrado e estruturado para transformações que se sustentam.
-
-                        </p>
-
-                        <div class="produto-meta">
-
-                            <span class="meta-item"><i class="fas fa-calendar-alt"></i> Sessões semanais por 3 meses</span>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
+            <p class="sistema-footer">
+                Não é intervenção pontual. É estrutura para evolução consistente.
+            </p>
         </div>
-
     </section>
 
-    <!-- Seção Para Empresas (PJ) -->
-
-    <section id="para-empresas" class="para-empresas">
-
-        <div class="container">
-
-            <div class="section-header">
-
-                <h2 class="section-title">PARA EMPRESAS</h2>
-
-                <div class="title-divider"></div>
-
+    <!-- Seção Sobre Claudia Barros -->
+    <section id="sobre" class="sobre-section">
+        <div class="container-sobre">
+            <div class="sobre-image-container">
+                <img src="images/claudia-barros.jpg" alt="Claudia Barros" class="sobre-image">
+                <div class="sobre-decoration"></div>
             </div>
-
-            
-
-            <div class="secao-intro aos-init" data-aos="fade-up">
-
-                <p class="secao-tagline">
-
-                    Processos de convergência entre estratégia, estrutura e execução — para organizações que precisam de mais do que diagnóstico.
-
-                </p>
-
-            </div>
-
-            <div class="produtos-grid-vertical">
-
-                <!-- Produto PJ 01 -->
-
-                <div class="produto-card-vertical aos-init" data-aos="fade-up" data-aos-delay="100">
-
-                    <div class="produto-number">01</div>
-
-                    <div class="produto-content">
-
-                        <h3 class="produto-title">Método Eixo®</h3>
-
-                        <p class="produto-subtitle">Diagnóstico estratégico e alinhamento organizacional</p>
-
-                        <p class="produto-description">
-
-                            Modelo estruturado para identificar o núcleo do desalinhamento e alinhar estratégia, estrutura e direção com foco em execução e resultados sustentados.
-
-                        </p>
-
-                        <div class="produto-icon">
-
-                            <i class="fas fa-crosshairs"></i>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <!-- Produto PJ 02 -->
-
-                <div class="produto-card-vertical aos-init" data-aos="fade-up" data-aos-delay="200">
-
-                    <div class="produto-number">02</div>
-
-                    <div class="produto-content">
-
-                        <h3 class="produto-title">CHA Corporativo</h3>
-
-                        <p class="produto-subtitle">Competências, Habilidades e Atitudes para performance</p>
-
-                        <p class="produto-description">
-
-                            Dinâmicas estratégicas que fortalecem liderança, comunicação e tomada de decisão, conectando desenvolvimento humano a resultados concretos.
-
-                        </p>
-
-                        <div class="produto-icon">
-
-                            <i class="fas fa-users-gear"></i>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <!-- Produto PJ 03 -->
-
-                <div class="produto-card-vertical aos-init" data-aos="fade-up" data-aos-delay="300">
-
-                    <div class="produto-number">03</div>
-
-                    <div class="produto-content">
-
-                        <h3 class="produto-title">Team Building</h3>
-
-                        <p class="produto-subtitle">Alinhamento e integração para alta performance</p>
-
-                        <p class="produto-description">
-
-                            Experiências estruturadas que fortalecem segurança psicológica, colaboração e clareza de papéis, reduzindo fricções e impulsionando resultados coletivos.
-
-                        </p>
-
-                        <div class="produto-icon">
-
-                            <i class="fas fa-people-group"></i>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- Sobre Claudia Barros -->
-
-    <section id="sobre" class="sobre">
-
-        <div class="container">
-
-            <div class="section-header">
-
-                <h2 class="section-title">SOBRE CLAUDIA BARROS</h2>
-
-                <div class="title-divider"></div>
-
-            </div>
-
             <div class="sobre-content">
-
-                <div class="sobre-image aos-init" data-aos="fade-right">
-
-                    <img src="./Geometria do SER  Consultoria Estratégica e Desenvolvimento Pessoalfiles/claudia-barros.jpg" alt="Claudia Barros" class="claudia-photo">
-
-                </div>
-
-                <div class="sobre-text aos-init" data-aos="fade-left">
-
-                    <p>
-
-                        Engenheira mecânica e consultora estratégica com mais de 20 anos de experiência em multinacionais e atuação multicultural. Especialista em diagnóstico organizacional e desenvolvimento de lideranças em ambientes complexos.
-
-                    </p>
-
-                    <p>
-
-                        Combina a precisão da engenharia com a profundidade das ciências humanas para entregar transformações que realmente se sustentam — tanto para organizações quanto para pessoas em travessias profundas.
-
-                    </p>
-
-                    <div class="sobre-badges">
-
-                        <div class="badge-item">
-
-                            <div class="badge-icon">
-
-                                <i class="fas fa-award"></i>
-
-                            </div>
-
-                            <div class="badge-text">
-
-                                <span class="badge-number">+20</span>
-
-                                <span class="badge-label">Anos de Experiência</span>
-
-                            </div>
-
-                        </div>
-
-                        <div class="badge-item">
-
-                            <div class="badge-icon">
-
-                                <i class="fas fa-globe"></i>
-
-                            </div>
-
-                            <div class="badge-text">
-
-                                <span class="badge-label">Multinacionais</span>
-
-                            </div>
-
-                        </div>
-
-                        <div class="badge-item">
-
-                            <div class="badge-icon">
-
-                                <i class="fas fa-users"></i>
-
-                            </div>
-
-                            <div class="badge-text">
-
-                                <span class="badge-label">Atuação Multicultural</span>
-
-                            </div>
-
-                        </div>
-
-                        <div class="badge-item">
-
-                            <div class="badge-icon">
-
-                                <i class="fas fa-chart-line"></i>
-
-                            </div>
-
-                            <div class="badge-text">
-
-                                <span class="badge-label">Diagnóstico Organizacional</span>
-
-                            </div>
-
-                        </div>
-
+                <h2 class="sobre-title">CLAUDIA BARROS</h2>
+                <p class="sobre-lead">
+                    É engenheira mecânica, analista junguiana e criadora da <strong>Geometria do Ser</strong> — uma abordagem que compreende a vida como um sistema onde forças, cargas, tensões, energia e pontos de ruptura se integram.
+                </p>
+                <p class="sobre-text">
+                    Seu trabalho investiga a <strong>engenharia interna</strong> que sustenta decisões, relações e direção — e que, quando desalinhada, gera cansaço mesmo quando tudo "parece estar funcionando".
+                </p>
+                <p class="sobre-text">
+                    Com mais de 20 anos de experiência em ambientes corporativos multidisciplinares e uma trajetória internacional que inclui quase 4 anos vivendo na China, integrou engenharia, filosofia oriental e psicologia prática para desenvolver uma <strong>leitura precisa dos desalinhamentos internos</strong> — aqueles que não se resolvem com mais esforço, mas com reorganização de eixo.
+                </p>
+                <div class="sobre-badges">
+                    <div class="badge-sobre">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>Engenheira Mecânica</span>
                     </div>
-
+                    <div class="badge-sobre">
+                        <i class="fas fa-brain"></i>
+                        <span>Analista Junguiana</span>
+                    </div>
+                    <div class="badge-sobre">
+                        <i class="fas fa-globe-asia"></i>
+                        <span>4 anos na China</span>
+                    </div>
+                    <div class="badge-sobre">
+                        <i class="fas fa-briefcase"></i>
+                        <span>+20 anos corporativo</span>
+                    </div>
                 </div>
-
+                <a href="https://wa.me/5511987545477" class="btn-sobre" target="_blank">
+                    <i class="fab fa-whatsapp"></i> CONVERSAR COM CLAUDIA
+                </a>
             </div>
-
         </div>
-
     </section>
 
-    <!-- Contato -->
-
-    <section id="contato" class="contato">
-
-        <div class="container">
-
-            <div class="section-header">
-
-                <h2 class="section-title">VAMOS INICIAR SUA JORNADA?</h2>
-
-                <div class="title-divider"></div>
-
-            </div>
-
-            <div class="contato-content">
-
-                <p class="contato-text">
-
-                    Entre em contato para iniciar uma conversa sobre como podemos trabalhar juntos — seja no desenvolvimento da sua organização ou na sua travessia pessoal.
-
+    <!-- Seção Contato -->
+    <section id="contato" class="contato-section">
+        <div class="container-contato">
+            <div class="contato-header">
+                <h2 class="contato-title">Vamos iniciar sua jornada?</h2>
+                <p class="contato-subtitle">
+                    Entre em contato para iniciar uma conversa sobre como podemos trabalhar juntos<br>
+                    — seja no desenvolvimento da sua organização ou na sua travessia pessoal.
                 </p>
-
-                <div class="contato-methods">
-
-                    <div class="contato-row-top">
-
-                        <a href="mailto:claudiabarros@geometriadoser.com.br" class="contato-card aos-init" data-aos="fade-up" data-aos-delay="100">
-
-                            <div class="contato-icon">
-
-                                <i class="fas fa-envelope"></i>
-
-                            </div>
-
-                            <div class="contato-info">
-
-                                <span class="contato-label">E-MAIL</span>
-
-                                <span class="contato-value">claudiabarros@geometriadoser.com.br</span>
-
-                            </div>
-
-                        </a>
-
-                        <a href="https://wa.me/5511987545477" class="contato-card aos-init" target="_blank" data-aos="fade-up" data-aos-delay="200">
-
-                            <div class="contato-icon">
-
-                                <i class="fab fa-whatsapp"></i>
-
-                            </div>
-
-                            <div class="contato-info">
-
-                                <span class="contato-label">WHATSAPP</span>
-
-                                <span class="contato-value">+55 11 98754-5477</span>
-
-                            </div>
-
-                        </a>
-
-                    </div>
-
-                    <div class="contato-row-bottom">
-
-                        <a href="https://www.linkedin.com/in/claudiabarros/" class="contato-card aos-init" target="_blank" data-aos="fade-up" data-aos-delay="300">
-
-                            <div class="contato-icon">
-
-                                <i class="fab fa-linkedin"></i>
-
-                            </div>
-
-                            <div class="contato-info">
-
-                                <span class="contato-label">LINKEDIN</span>
-
-                                <span class="contato-value">/in/claudiabarros</span>
-
-                            </div>
-
-                        </a>
-
-                        <a href="https://www.instagram.com/claugeometriadoser" class="contato-card aos-init" target="_blank" data-aos="fade-up" data-aos-delay="400">
-
-                            <div class="contato-icon">
-
-                                <i class="fab fa-instagram"></i>
-
-                            </div>
-
-                            <div class="contato-info">
-
-                                <span class="contato-label">INSTAGRAM</span>
-
-                                <span class="contato-value">@claugeometriadoser</span>
-
-                            </div>
-
-                        </a>
-
-                        <a href="https://open.spotify.com/show/2YXWbjqoFBL9DDLHRI00Aw?si=1566178c64634053" class="contato-card aos-init" target="_blank" data-aos="fade-up" data-aos-delay="500">
-
-                            <div class="contato-icon">
-
-                                <i class="fab fa-spotify"></i>
-
-                            </div>
-
-                            <div class="contato-info">
-
-                                <span class="contato-label">SPOTIFY</span>
-
-                                <span class="contato-value">Me Editar</span>
-
-                            </div>
-
-                        </a>
-
-                    </div>
-
-                </div>
-
-                <div class="contato-cta aos-init" data-aos="fade-up" data-aos-delay="500">
-
-                    <a href="https://wa.me/5511987545477" class="btn btn-primary" target="_blank">
-
-                        <i class="fab fa-whatsapp"></i> Iniciar Conversa
-
-                    </a>
-
-                </div>
-
             </div>
 
-        </div>
+            <div class="contato-grid">
+                <!-- WhatsApp -->
+                <a href="https://wa.me/5511987545477" class="contato-card" target="_blank">
+                    <div class="contato-icon whatsapp">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h3 class="contato-label">WHATSAPP</h3>
+                    <p class="contato-value">+55 11 98754-5477</p>
+                    <span class="contato-action">Enviar mensagem →</span>
+                </a>
 
+                <!-- Email -->
+                <a href="mailto:claudiabarros@geometriadoser.com.br" class="contato-card">
+                    <div class="contato-icon email">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3 class="contato-label">E-MAIL</h3>
+                    <p class="contato-value">claudiabarros@geometriadoser.com.br</p>
+                    <span class="contato-action">Enviar e-mail →</span>
+                </a>
+
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/claudiabarros/" class="contato-card" target="_blank">
+                    <div class="contato-icon linkedin">
+                        <i class="fab fa-linkedin"></i>
+                    </div>
+                    <h3 class="contato-label">LINKEDIN</h3>
+                    <p class="contato-value">/in/claudiabarros</p>
+                    <span class="contato-action">Conectar →</span>
+                </a>
+
+                <!-- Instagram -->
+                <a href="https://www.instagram.com/claugeometriadoser" class="contato-card" target="_blank">
+                    <div class="contato-icon instagram">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <h3 class="contato-label">INSTAGRAM</h3>
+                    <p class="contato-value">@claugeometriadoser</p>
+                    <span class="contato-action">Seguir →</span>
+                </a>
+
+                <!-- Spotify -->
+                <a href="https://open.spotify.com/show/2YXWbjqoFBL9DDLHRI00Aw?si=1566178c64634053" class="contato-card" target="_blank">
+                    <div class="contato-icon spotify">
+                        <i class="fab fa-spotify"></i>
+                    </div>
+                    <h3 class="contato-label">PODCAST</h3>
+                    <p class="contato-value">Me Editar</p>
+                    <span class="contato-action">Ouvir agora →</span>
+                </a>
+            </div>
+        </div>
     </section>
 
     <!-- Footer -->
-
     <footer class="footer">
-
-        <div class="container">
-
+        <div class="container-footer">
             <div class="footer-content">
-
                 <div class="footer-brand">
-
-                    <img src="./Geometria do SER  Consultoria Estratégica e Desenvolvimento Pessoalfiles/logo-geometria-do-ser.png" alt="Geometria do SER" class="footer-logo">
-
-                    <h3>GEOMETRIA DO SER</h3>
-
-                    <p>Alinhando as partes que sustentam o resultado</p>
-
+                    <img src="images/logo-geometria-do-ser.png" alt="Geometria do SER" class="footer-logo">
+                    <h3 class="footer-title">GEOMETRIA DO SER</h3>
+                    <p class="footer-tagline">Alinhando as partes que sustentam o resultado</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4 class="footer-heading">Navegação</h4>
+                    <ul class="footer-menu">
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="para-pessoas.html">Para Pessoas</a></li>
+                        <li><a href="para-empresas.html">Para Empresas</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
                 </div>
 
                 <div class="footer-links">
-
-                    <a href="https://oihsspkc.gensparkspace.com/#inicio">Início</a>
-
-                    <a href="https://oihsspkc.gensparkspace.com/#para-pessoas">Para Pessoas</a>
-
-                    <a href="https://oihsspkc.gensparkspace.com/#para-empresas">Para Empresas</a>
-
-                    <a href="https://oihsspkc.gensparkspace.com/#sobre">Sobre</a>
-
-                    <a href="https://oihsspkc.gensparkspace.com/#contato">Contato</a>
-
+                    <h4 class="footer-heading">Soluções</h4>
+                    <ul class="footer-menu">
+                        <li><a href="para-pessoas.html">Sessão de Realinhamento</a></li>
+                        <li><a href="para-pessoas.html">Reengenharia do SER</a></li>
+                        <li><a href="para-pessoas.html">Mentoria de Travessia</a></li>
+                        <li><a href="para-empresas.html">Método EIXO®</a></li>
+                        <li><a href="para-empresas.html">CHA Corporativo</a></li>
+                        <li><a href="para-empresas.html">Team Building</a></li>
+                    </ul>
                 </div>
 
+                <div class="footer-links">
+                    <h4 class="footer-heading">Contato</h4>
+                    <ul class="footer-menu">
+                        <li><a href="https://wa.me/5511987545477" target="_blank">WhatsApp</a></li>
+                        <li><a href="mailto:claudiabarros@geometriadoser.com.br">E-mail</a></li>
+                        <li><a href="https://www.linkedin.com/in/claudiabarros/" target="_blank">LinkedIn</a></li>
+                        <li><a href="https://www.instagram.com/claugeometriadoser" target="_blank">Instagram</a></li>
+                        <li><a href="https://open.spotify.com/show/2YXWbjqoFBL9DDLHRI00Aw" target="_blank">Podcast</a></li>
+                    </ul>
+                </div>
             </div>
 
             <div class="footer-bottom">
-
-                <p>© 2025 Geometria do SER. Todos os direitos reservados.</p>
-
+                <p class="footer-copyright">
+                    © 2025 Geometria do SER. Todos os direitos reservados.
+                </p>
             </div>
-
         </div>
-
     </footer>
 
     <!-- JavaScript -->
-
-    <script src="./Geometria do SER  Consultoria Estratégica e Desenvolvimento Pessoalfiles/script.js"></script>
-
-<button class="back-to-top" aria-label="Voltar ao topo"><i class="fas fa-chevron-up"></i></button></body></html>
+    <script src="js/script-new.js"></script>
+</body>
+</html>

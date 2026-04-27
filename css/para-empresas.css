@@ -1,0 +1,503 @@
+/* =========================================
+   PÁGINA PARA EMPRESAS - GEOMETRIA DO SER
+   ========================================= */
+
+/* ===== HERO PARA EMPRESAS ===== */
+.hero-empresas {
+    position: relative;
+    height: 100vh;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1600&q=80');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+.hero-empresas-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(15, 20, 25, 0.9), rgba(26, 31, 46, 0.85));
+    z-index: 1;
+}
+
+.hero-empresas-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 0 20px;
+    margin-top: -50px;
+}
+
+.hero-empresas-title {
+    font-family: var(--font-serif);
+    font-size: 5rem;
+    font-weight: 400;
+    color: var(--cor-white);
+    letter-spacing: 4px;
+    margin-bottom: 40px;
+}
+
+.hero-empresas-subtitle {
+    font-size: 1.6rem;
+    line-height: 1.9;
+    color: var(--cor-gray-light);
+    font-weight: 300;
+}
+
+/* ===== SEÇÃO PROBLEMA ===== */
+.problema-section {
+    background-color: var(--cor-dark-bg);
+    padding: 100px 40px;
+    position: relative;
+}
+
+.container-problema {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.problema-title {
+    font-family: var(--font-serif);
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: var(--cor-white);
+    margin-bottom: 60px;
+    line-height: 1.4;
+}
+
+.problemas-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.problema-item {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(201, 169, 97, 0.2);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.problema-item:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-color: var(--cor-gold);
+    transform: translateY(-5px);
+}
+
+.problema-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    color: var(--cor-gold);
+    background: rgba(201, 169, 97, 0.1);
+    border-radius: 50%;
+}
+
+.problema-item h3 {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--cor-white);
+    line-height: 1.5;
+}
+
+.problema-insight {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    color: var(--cor-gray-light);
+    margin-top: 50px;
+}
+
+.problema-insight strong {
+    color: var(--cor-gold);
+    font-weight: 600;
+}
+
+/* ===== INTRO SOLUÇÕES ===== */
+.intro-solucoes {
+    background: linear-gradient(135deg, var(--cor-gold), var(--cor-gold-dark));
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.intro-title {
+    font-family: var(--font-serif);
+    font-size: 2.8rem;
+    font-weight: 400;
+    color: white;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* ===== MÉTODOS ===== */
+.metodo-section {
+    padding: 120px 40px;
+    position: relative;
+}
+
+.metodo-eixo {
+    background-color: #f5f2ed;
+}
+
+.metodo-cha {
+    background-color: var(--cor-dark-bg);
+}
+
+.metodo-team {
+    background-color: #e8e4dc;
+}
+
+.container-metodo {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.container-metodo.reverse {
+    grid-template-columns: 1fr 1fr;
+}
+
+.metodo-content {
+    position: relative;
+}
+
+.metodo-badge {
+    display: inline-block;
+    padding: 8px 20px;
+    background: linear-gradient(135deg, var(--cor-gold), var(--cor-gold-dark));
+    color: white;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-radius: 20px;
+    margin-bottom: 25px;
+}
+
+.metodo-title {
+    font-family: var(--font-serif);
+    font-size: 3.5rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.metodo-eixo .metodo-title,
+.metodo-team .metodo-title {
+    color: var(--cor-dark-bg);
+}
+
+.metodo-cha .metodo-title {
+    color: var(--cor-white);
+}
+
+.metodo-subtitle {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+    color: var(--cor-gold);
+}
+
+.metodo-description {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.metodo-eixo .metodo-description,
+.metodo-team .metodo-description {
+    color: #4a4a4a;
+}
+
+.metodo-cha .metodo-description {
+    color: var(--cor-gray-light);
+}
+
+.metodo-resultado {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+
+.metodo-eixo .metodo-resultado,
+.metodo-team .metodo-resultado {
+    color: #333;
+}
+
+.metodo-cha .metodo-resultado {
+    color: var(--cor-white);
+}
+
+.metodo-resultado strong {
+    color: var(--cor-gold);
+    font-weight: 600;
+}
+
+.btn-metodo {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 18px 40px;
+    background: linear-gradient(135deg, var(--cor-gold), var(--cor-gold-dark));
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    border: none;
+    box-shadow: 0 4px 15px rgba(201, 169, 97, 0.3);
+}
+
+.btn-metodo:hover {
+    background: linear-gradient(135deg, var(--cor-gold-dark), var(--cor-gold));
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(201, 169, 97, 0.5);
+}
+
+/* ===== IMAGENS DOS MÉTODOS ===== */
+.metodo-image {
+    position: relative;
+    height: 550px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.metodo-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.metodo-image:hover .metodo-img {
+    transform: scale(1.05);
+}
+
+/* ===== CTA FINAL EMPRESAS ===== */
+.cta-empresas-final {
+    background: linear-gradient(135deg, var(--cor-navy), var(--cor-dark-bg));
+    padding: 100px 40px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-empresas-final::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('https://images.unsplash.com/photo-1497366216548-37526070297c?w=1600&q=80');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.08;
+    z-index: 0;
+}
+
+.container-cta-empresas {
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.cta-empresas-title {
+    font-family: var(--font-serif);
+    font-size: 3rem;
+    font-weight: 400;
+    color: var(--cor-white);
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+    line-height: 1.3;
+}
+
+.cta-empresas-text {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    color: var(--cor-gray-light);
+    margin-bottom: 50px;
+}
+
+.cta-empresas-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn-cta-empresas {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 18px 40px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.btn-cta-empresas.btn-primary {
+    background: linear-gradient(135deg, var(--cor-gold), var(--cor-gold-dark));
+    color: white;
+    border: 2px solid var(--cor-gold);
+}
+
+.btn-cta-empresas.btn-primary:hover {
+    background: linear-gradient(135deg, var(--cor-gold-dark), var(--cor-gold));
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(201, 169, 97, 0.5);
+}
+
+.btn-cta-empresas.btn-secondary {
+    background: transparent;
+    color: var(--cor-gold);
+    border: 2px solid var(--cor-gold);
+}
+
+.btn-cta-empresas.btn-secondary:hover {
+    background: var(--cor-gold);
+    color: var(--cor-dark-bg);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(201, 169, 97, 0.4);
+}
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 1024px) {
+    .problemas-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .container-metodo,
+    .container-metodo.reverse {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+    
+    .metodo-image {
+        height: 400px;
+    }
+    
+    .hero-empresas {
+        background-attachment: scroll;
+    }
+    
+    .hero-empresas-title {
+        font-size: 4rem;
+        letter-spacing: 3px;
+    }
+    
+    .hero-empresas-subtitle {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .problemas-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .metodo-section {
+        padding: 80px 20px;
+    }
+    
+    .hero-empresas {
+        height: 100vh;
+        min-height: 500px;
+        background-attachment: scroll;
+    }
+    
+    .hero-empresas-content {
+        margin-top: 0;
+    }
+    
+    .hero-empresas-title {
+        font-size: 3rem;
+        letter-spacing: 2px;
+        margin-bottom: 30px;
+    }
+    
+    .hero-empresas-subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .problema-section {
+        padding: 60px 20px;
+    }
+    
+    .problema-title {
+        font-size: 1.8rem;
+    }
+    
+    .intro-solucoes {
+        padding: 40px 20px;
+    }
+    
+    .intro-title {
+        font-size: 2rem;
+    }
+    
+    .metodo-title {
+        font-size: 2.5rem;
+    }
+    
+    .metodo-subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .metodo-description,
+    .metodo-resultado {
+        font-size: 1rem;
+    }
+    
+    .metodo-image {
+        height: 300px;
+    }
+    
+    .cta-empresas-title {
+        font-size: 2rem;
+    }
+    
+    .cta-empresas-text {
+        font-size: 1.1rem;
+    }
+    
+    .cta-empresas-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .btn-cta-empresas {
+        justify-content: center;
+    }
+    
+    .cta-empresas-final {
+        padding: 60px 20px;
+    }
+}
